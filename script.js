@@ -1,7 +1,7 @@
 //your JS code here. If required.
 //your code here
 let ul = document.getElementById("band");
-const arr = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
 
 function getArticleLessString(input) {
@@ -23,9 +23,9 @@ function getArticleLessString(input) {
 let hashMap = {};
 let arr1 = [];
 
-for (let i = 0; i < arr.length; i++) {
-  let articleLessString = getArticleLessString(arr[i]);
-  hashMap[articleLessString] = arr[i];
+for (let i = 0; i < bands.length; i++) {
+  let articleLessString = getArticleLessString(bands[i]);
+  hashMap[articleLessString] = bands[i];
   arr1.push(articleLessString);
 }
 arr1.sort();
